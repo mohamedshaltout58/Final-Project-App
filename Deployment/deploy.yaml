@@ -16,7 +16,7 @@ spec:
         app: final-project
     spec:
       containers:
-      - image: gcr.io/gcp-labs-project/final-task:${BUILD_NUMBER}
+      - image: gcr.io/gcp-labs-project/myapp:${BUILD_NUMBER}
         name: my-web-app
         imagePullPolicy: Always
         ports:
