@@ -1,7 +1,7 @@
 
 
 pipeline {
-    agent { label 'final-project' }
+    agent { label 'my-final-task' }
     stages {
         stage('build') {
             steps {
