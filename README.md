@@ -23,5 +23,3 @@
       kubectl apply -f Deployment
 
 ## You can check the screenshots of this process in [app-images](app-images/)
-# SCREENSHOT OF THE SIMPLE APP
-  ![Alt Text](app-images/final-23 my-app-final.png)
