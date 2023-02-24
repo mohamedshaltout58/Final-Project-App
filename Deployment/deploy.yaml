@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-web-app
+  namespace: myapp
+  labels:
+    app: final-project
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: final-project
+  template:
+    metadata:
+      labels:
+        app: final-project
+    spec:
+      containers:
+      - image: gcr.io/gcp-labs-project/final-task:${BUILD_NUMBER}
+        name: my-web-app
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 80
+        resources: {}
